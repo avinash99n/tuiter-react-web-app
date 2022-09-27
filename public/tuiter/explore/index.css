@@ -5,14 +5,14 @@
 .wd-rounded-corners-all-around {
     border-radius: 50px;
 }
-.wd-page{
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
-    border-style: solid;
-    border-top:none;
-    border-bottom:none;
+/*.wd-page{*/
+/*    border-width: 1px;*/
+/*    border-color: rgb(47, 51, 54);*/
+/*    border-style: solid;*/
+/*    border-top:none;*/
+/*    border-bottom:none;*/
 
-}
+/*}*/
 
 
 .input-icons i {
@@ -35,10 +35,10 @@
     color : white
 }
 
-.wd-full-page{
-    background-color: black;
+/*.wd-full-page{*/
+/*    background-color: black;*/
 
-}
+/*}*/
 
 .wd-settings{
     text-decoration: none ! important;
@@ -79,12 +79,12 @@ li a {
     color:darkgray;
 }
 
-hr {
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
-    border-style: solid;
+/*hr {*/
+/*    border-width: 1px;*/
+/*    border-color: rgb(47, 51, 54);*/
+/*    border-style: solid;*/
 
-}
+/*}*/
 
 .wd-border-below{
     width: 100%;
@@ -94,9 +94,9 @@ hr {
     background-color: rgb(110,118,125);
     margin-top:0px
 }
-.wd-padding-left-container{
-    padding-left: 16px;
-}
+/*.wd-padding-left-container{*/
+/*    padding-left: 16px;*/
+/*}*/
 
 /*h4{*/
 /*    color:rgb(110,118,125);*/
@@ -126,11 +126,11 @@ hr {
     padding-top: 5px;
 }
 
-.wd-more-icon{
-    float :right;
-    padding-right :16px;
-    color: rgb(110,118,125);
-}
+/*.wd-more-icon{*/
+/*    float :right;*/
+/*    padding-right :16px;*/
+/*    color: rgb(110,118,125);*/
+/*}*/
 
 .wd-padding-bw-tweets{
     padding-top:15px;
@@ -169,3 +169,4 @@ hr {
     padding-right :16px;
 
 }
+
