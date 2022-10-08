@@ -208,8 +208,8 @@ li a {
     color:white !important;
 }
 .wd-first-feed-img{
-    width:100%;
-
+    width: 104%;
+    margin-left: -13px!important;
 }
 .p-4{
     padding-top: 10px!important;
