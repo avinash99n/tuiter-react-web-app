@@ -18,11 +18,11 @@
 .input-icons i {
     position: absolute;
 }
-hr {
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
-    border-style: solid;
-}
+/*hr {*/
+/*    border-width: 1px;*/
+/*    border-color: rgb(47, 51, 54);*/
+/*    border-style: solid;*/
+/*}*/
 
 .icon {
     padding: 10px;
@@ -39,12 +39,15 @@ hr {
 
 .input-field {
     width: 94%;
-    padding: 10px;
+    padding: 6px;
     padding-left: 60px!important;
-    border-radius: 50px;
+    border-radius: 40px;
     border-color: black;
-    background-color: rgb(47, 51, 54);
-    color : white
+
+}
+
+.wd-rmv-extra-space{
+    padding-bottom: 0px!important;
 }
 
 /*.wd-full-page{*/
@@ -223,16 +226,20 @@ li a {
     color:darkgray;
 }
 
-/*hr {*/
-/*    border-width: 1px;*/
-/*    border-color: rgb(47, 51, 54);*/
-/*    border-style: solid;*/
+.wd-width-more{
+    width:100%
+}
 
-/*}*/
+
 .container{
     margin:0px !important;
     padding :0px !important;
 
+}
+.wd-postlist-border{
+        border-width: 1px;
+        border-color: rgb(47, 51, 54);
+        border-style: solid;
 }
 .row{
     margin-right:0px !important;
@@ -281,8 +288,8 @@ li a {
 hr{
     color:lightgrey !important;
     margin: 0px !important;
-    margin-left:-14px !important;
-    width:104% !important;
+    /*margin-left:-10px !important;*/
+    width:100% !important;
 }
 
 .wd-tweets{
