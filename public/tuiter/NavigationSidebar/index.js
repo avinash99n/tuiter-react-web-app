@@ -1,14 +1,18 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (current) => {
     return(`
 
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter"></i></a>
        
-       <a class="list-group-item" href="/">
+       ${current==='home' ? 
+       `<a class="list-group-item active" href="../../tuiter/HomeScreen/home.html">`:
+        `<a class="list-group-item" href="../../tuiter/HomeScreen/home.html">`}
        <i class="fa fa-home"></i> Home</a>
        
-        <a class="list-group-item active" href="/">
+       ${current ==='explore' ?
+        `<a class="list-group-item active" href="../../tuiter/explore/index.html">` :
+        `<a class="list-group-item " href="../../tuiter/explore/index.html">`}
        <i class="fa fa-hashtag"></i> Explore</a>
        
           <a class="list-group-item" href="/">
