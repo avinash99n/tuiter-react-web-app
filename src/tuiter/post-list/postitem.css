@@ -1,0 +1,139 @@
+/*didnt feel lightgray is approproiate hence changed the color code for palces where there is light gray*/
+.wd-bookmarks-title{
+    font-size: 20px;
+    padding-top: 12px;
+    color: black;
+
+}
+
+.wd-handle-name{
+    font-size: 13px;
+    color: black;
+    padding-bottom: 12px;
+}
+
+.wd-more-icon-bookmark{
+
+    display:inline-block;
+    float:right;
+
+
+}
+
+.wd-profile-img{
+    display :inline-block;
+    float :left;
+    width:48px;
+    height:48px;
+    border-radius :50%;
+}
+
+.wd-author-name{
+    color:black;
+    padding-left: 12px;
+    display: inline;
+    font-size: 15px;
+    padding-top: 12px;
+    font-weight: bold;
+
+
+}
+
+.wd-author-handle{
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+
+}
+
+.wd-tweet-content{
+    color: black;
+    width:564px!important;
+    font-size: 15px;
+    padding-left: 60px !important;
+}
+
+.wd-tweet-image{
+    width : 504px;
+    height: 264px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /*padding-top:12px;*/
+    /*padding-left: 60px;*/
+    margin-top:12px;
+    border-bottom-width: 1px;
+    border-top:0px !important;
+    border-left:0px !important;
+    border-right:0px !important;
+    border-style: solid;
+    border-color:  rgb(47, 51, 54);
+
+}
+hr{
+    margin-top: 0 !important;
+}
+
+
+.wd-tweet-image-content{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px ;
+    border-width:1px;
+    border-style:solid;
+    border-color: rgb(47,51,54);
+    border-top:0px!important;
+}
+
+.wd-tweet-image-title{
+    margin:0;
+    padding: 12px;
+    font-size:15px;
+    color:black;
+    width:504px !important;
+}
+
+.wd-tweet-image-desc{
+    padding:12px;
+    padding-top:0px !important;
+    color:black;
+    margin:0;
+    width:504px !important;
+}
+
+.wd-action{
+
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border :none;
+    /*color:rgb(110,118,125);*/
+    color:black;
+    background-color: white;
+}
+
+
+
+.wd-tweet-actions{
+    padding-top:12px;
+    padding-bottom: 12px;
+    /*padding-left:90px;*/
+    width:504px;
+    display :flex;
+    justify-content: space-between;
+}
+
+.wd-action-count{
+    display: inline-block;
+    padding-left: 8px;
+    margin:0;
+}
+
+.wd-active-action {
+    color: red;
+}
+
+.wd-icon-padding{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+

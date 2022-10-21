@@ -1,6 +1,7 @@
 const PostItem = (post)=>{
     return(`
     
+    
     <div>
     <img src=${post.avatarIcon} class="wd-profile-img">
     <i class="fa fa-ellipsis-h fa-lg wd-more-icon"></i>
