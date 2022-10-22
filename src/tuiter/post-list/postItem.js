@@ -27,7 +27,7 @@ const length_title = post.title.length
 <>
 
 
-    < img src={post.avatarIcon} className="wd-profile-img"/>
+    < img src={post.avatarIcon} className="wd-profile-img" alt="None"/>
     <div className="wd-author-name">{post.userName}
 
         <FontAwesomeIcon  icon={faCheckCircle} className="wd-icon-padding"/>
@@ -39,7 +39,7 @@ const length_title = post.title.length
     <div className="wd-tweet-content">
  {post.caption}
     <div>
-        <img src={post.image} className="wd-tweet-image"/>
+        <img src={post.image} className="wd-tweet-image" alt="None"/>
         <div className="wd-tweet-image-content">
 
             { length_title>0 &&
