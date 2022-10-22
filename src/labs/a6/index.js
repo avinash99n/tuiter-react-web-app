@@ -1,7 +1,7 @@
 import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
-import todoList from "./Todo/todo-list";
+import TodoList from "./Todo/todo-list.js";
 
 function Assignment6() {
     return (
@@ -10,7 +10,7 @@ function Assignment6() {
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
-            <todoList/>
+            <TodoList/>
         </div>
     );
 }
