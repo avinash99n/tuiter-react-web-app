@@ -3,6 +3,8 @@ import {faCheckCircle,} from '@fortawesome/free-regular-svg-icons'
 import React from "react";
 import TuitStats from "./tuit-stats";
 import "./tuit-list.css"
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../reducers/tuit-reducer";
 
 const TuitListItem = (
     {
@@ -22,6 +24,10 @@ const TuitListItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
 
 
     return (
@@ -30,12 +36,16 @@ const TuitListItem = (
 <div className="tuit-list">
         <li className="list-group-item" style ={{width:600}} >
 
-                <div className="col-10">
+                <div className="col-12">
             < img src={tuit.image} className="wd-profile-img" alt="None"/>
             <div className="wd-author-name">{tuit.userName}
 
                 <FontAwesomeIcon  icon={faCheckCircle} className="wd-icon-padding wd-verified-icon"/>
             </div>
+
+                        <i className="bi bi-x-lg float-end"
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
+
             <div className="wd-author-handle"> {tuit.handle} . {tuit.time} </div>
 
 
