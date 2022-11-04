@@ -1,6 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import {faBell, faMessage, faBookmark, faUser, faListAlt,faStar} from "@fortawesome/free-regular-svg-icons";
+import {faHome,faHashtag,faEllipsis} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const NavigationSidebar = (
 
 ) => {
@@ -9,15 +12,16 @@ const NavigationSidebar = (
     const active = paths[2];
     return (
         <div className="list-group">
+
             <li className="list-group-item">Tuiter</li>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-                Home
+                <FontAwesomeIcon  icon={faHome} className="wd-icon-padding "/>   Home
             </Link>
             <Link to="/tuiter/explore-screen" className={`list-group-item ${active !== 'home'  ?   'active':''}`}>
-                Explore
+                <FontAwesomeIcon  icon={faHashtag} className="wd-icon-padding "/> Explore
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <FontAwesomeIcon  icon={faStar} className="wd-icon-padding "/> Labs
             </Link>
             {/*<a className={`list-group-item*/}
             {/*        ${active === 'home'?'active':''}`}>*/}
@@ -29,27 +33,27 @@ const NavigationSidebar = (
             {/*</a>*/}
             <li className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-                Notifications
+                <FontAwesomeIcon  icon={faBell} className="wd-icon-padding "/>  Notifications
             </li>
             <li className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-                Messages
+                <FontAwesomeIcon  icon={faMessage} className="wd-icon-padding "/>   Messages
             </li>
             <li className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+                <FontAwesomeIcon  icon={faBookmark} className="wd-icon-padding "/>  Bookmarks
             </li>
             <li className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-                Lists
+                <FontAwesomeIcon  icon={faListAlt} className="wd-icon-padding "/>  Lists
             </li>
             <li className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-                Profile
+                <FontAwesomeIcon  icon={faUser} className="wd-icon-padding "/>   Profile
             </li>
             <li className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-                More
+                <FontAwesomeIcon  icon={faEllipsis} className="wd-icon-padding "/>   More
             </li>
         </div>
     );

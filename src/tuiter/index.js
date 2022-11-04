@@ -7,10 +7,21 @@ import HomeComponent from "./home";
 import '../vendors/bootstrap/bootstrap.min.css';
 import {Routes, Route} from "react-router";
 
+import whoReducer
+    from "./reducers/who-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
+import { configureStore }
+    from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+import tuitReducer from "./reducers/tuit-reducer";
+const store = configureStore(
+    {reducer: {who: whoReducer, tuits: tuitsReducer,tuitList:tuitReducer}});
+
 
 function Tuiter() {
-    return (
 
+    return (
+    <Provider store={store}>
         <div className="row mt-2">
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                 <NavigationSidebar active="explore-screen"/>
@@ -29,6 +40,8 @@ function Tuiter() {
                 <WhoToFollowList/>
             </div>
         </div>
+    </Provider>
+
 
         // <div>
         //     <Nav/>
