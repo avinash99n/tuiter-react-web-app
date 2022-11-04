@@ -17,7 +17,7 @@ const NavigationSidebar = (
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <FontAwesomeIcon  icon={faHome} className="wd-icon-padding "/>   Home
             </Link>
-            <Link to="/tuiter/explore-screen" className={`list-group-item ${active !== 'home'  ?   'active':''}`}>
+            <Link to="/tuiter/explore-screen" className={`list-group-item ${active === 'explore-screen'  ?   'active':''}`}>
                 <FontAwesomeIcon  icon={faHashtag} className="wd-icon-padding "/> Explore
             </Link>
             <Link to="/" className="list-group-item">
@@ -47,10 +47,13 @@ const NavigationSidebar = (
                     ${active === 'lists'?'active':''}`}>
                 <FontAwesomeIcon  icon={faListAlt} className="wd-icon-padding "/>  Lists
             </li>
-            <li className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
-                <FontAwesomeIcon  icon={faUser} className="wd-icon-padding "/>   Profile
-            </li>
+            {/*<li className={`list-group-item*/}
+            {/*        ${active === 'profile'?'active':''}`}>*/}
+            {/*    <FontAwesomeIcon  icon={faUser} className="wd-icon-padding "/>   Profile*/}
+            {/*</li>*/}
+            <Link to="/tuiter/profile-screen" className={`list-group-item ${active === 'profile-screen'  ?   'active':''}`}>
+                <FontAwesomeIcon  icon={faUser} className="wd-icon-padding "/> Profile
+            </Link>
             <li className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <FontAwesomeIcon  icon={faEllipsis} className="wd-icon-padding "/>   More

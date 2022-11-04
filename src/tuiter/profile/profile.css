@@ -1,0 +1,18 @@
+.wd-img{
+    height:150px;
+    width:150px;
+}
+.wd-profile-pic{
+    position: absolute;
+    top:320%;
+    left:5%
+}
+
+.wd-banner{
+    position: relative;
+    display: inline;
+}
+
+h4{
+    margin-bottom: 0!important;
+}
