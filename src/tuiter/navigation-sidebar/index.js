@@ -9,14 +9,23 @@ const NavigationSidebar = (
 ) => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    const active = paths[2];
+    let active = paths[2];
+    if(active===undefined){
+        active='explore-screen'
+    }
+
     return (
         <div className="list-group">
 
             <li className="list-group-item">Tuiter</li>
+
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <FontAwesomeIcon  icon={faHome} className="wd-icon-padding "/>   Home
             </Link>
+
+
+
+
             <Link to="/tuiter/explore-screen" className={`list-group-item ${active === 'explore-screen'  ?   'active':''}`}>
                 <FontAwesomeIcon  icon={faHashtag} className="wd-icon-padding "/> Explore
             </Link>
