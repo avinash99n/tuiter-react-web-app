@@ -42,7 +42,7 @@ return (
           <img src={profile[0].profilePicture} className=" rounded-circle wd-img wd-profile-pic"/>
           </div>
           <div className ="pt-3">
-              <Link to="/tuiter/edit-profile">
+              <Link to="/tuiter/profile-screen/edit-profile">
                   <button
                       className="btn btn-secondary float-end rounded-pill pt-2"
                       style={{ backgroundColor: "transparent",color:"black" }}>

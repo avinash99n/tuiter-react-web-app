@@ -51,7 +51,7 @@ const NavigationSidebar = (
             {/*        ${active === 'profile'?'active':''}`}>*/}
             {/*    <FontAwesomeIcon  icon={faUser} className="wd-icon-padding "/>   Profile*/}
             {/*</li>*/}
-            <Link to="/tuiter/profile-screen" className={`list-group-item ${active === 'profile-screen'  ?   'active':''}`}>
+            <Link to="/tuiter/profile-screen" className={`list-group-item ${active === 'profile-screen' ?   'active':''}`}>
                 <FontAwesomeIcon  icon={faUser} className="wd-icon-padding "/> Profile
             </Link>
             <li className={`list-group-item
