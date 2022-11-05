@@ -1,6 +1,6 @@
 import React from "react";
 import TuitList from "../tuits-list/index";
-import PostList from "../post-list/postList";
+
 import WhatsHappening from "./whats-happening";
 
 

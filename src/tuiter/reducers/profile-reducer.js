@@ -1,5 +1,4 @@
 import profileArray from "../profile/profile.json"
-import {createSlice} from "@reduxjs/toolkit";
 
 const profileData = (state = profileArray, action) => {
 

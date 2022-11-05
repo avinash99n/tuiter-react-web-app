@@ -1,10 +1,10 @@
 import React from "react";
-import {useEffect} from "react";
+
 import {useSelector,useDispatch} from "react-redux";
 import "./profile.css";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBookmark,faMap,faCalendarDays} from "@fortawesome/free-regular-svg-icons";
+import {faCalendarDays} from "@fortawesome/free-regular-svg-icons";
 import{faLocationDot,faCake} from "@fortawesome/free-solid-svg-icons"
 
 const ProfileComponent = () =>{
@@ -25,7 +25,7 @@ const ProfileComponent = () =>{
 
     const profile = useSelector((state)=> state.profileReducer);
 
-    const dispatch = useDispatch();
+
 
     // useEffect(() => {
     //     dispatch({ type: "set-parameter", changeState: "profile" });
@@ -38,8 +38,8 @@ return (
           <h4 className="fw-bold d-inline" style={{color:'black'}}>{profile[0].firstName} {profile[0].lastName}</h4>
           <p className="wd-handle-one wd-grey"> 6,114 Tweets</p>
           <div className="wd-banner">
-          <img src={profile[0].bannerPicture} className="wd-img-one w-100"/>
-          <img src={profile[0].profilePicture} className=" rounded-circle wd-img wd-profile-pic"/>
+          <img src={profile[0].bannerPicture} className="wd-img-one w-100" alt="none"/>
+          <img src={profile[0].profilePicture} className=" rounded-circle wd-img wd-profile-pic" alt="none"/>
           </div>
           <div className ="pt-3">
               <Link to="/tuiter/profile-screen/edit-profile">

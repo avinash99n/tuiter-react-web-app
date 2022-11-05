@@ -31,14 +31,14 @@ console.log(data)
                 </div>
                 <div className="position-relative">
                 <div className="wd-banner">
-                    <img src={profile[0].bannerPicture} className="wd-img-one w-100"/>
+                    <img src={profile[0].bannerPicture} className="wd-img-one w-100" alt="none"/>
                     <div className="card-img-overlay">
                         <div className= "wd-over">
                             <FontAwesomeIcon icon={faCamera} ></FontAwesomeIcon>
                             <FontAwesomeIcon icon={faXmark}  className="ms-4"></FontAwesomeIcon>
                         </div>
                     </div>
-                    <img src={profile[0].profilePicture} className=" rounded-circle wd-img wd-profile-pic"/>
+                    <img src={profile[0].profilePicture} className=" rounded-circle wd-img wd-profile-pic" alt="none"/>
                     <div className="card-img-overlay">
                         <div className= "wd-over-profile-pic">
                             <FontAwesomeIcon icon={faCamera} ></FontAwesomeIcon>
