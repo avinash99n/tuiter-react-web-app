@@ -1,6 +1,6 @@
 import React from "react";
 
-import {useSelector,useDispatch} from "react-redux";
+import {useSelector} from "react-redux";
 import "./profile.css";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
