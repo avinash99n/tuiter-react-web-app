@@ -5,6 +5,8 @@ import TuitStats from "./tuit-stats";
 import "./tuit-list.css"
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "../reducers/tuit-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+import "../post-list/postitem.css";
 
 const TuitListItem = (
     {
@@ -26,7 +28,7 @@ const TuitListItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
 
@@ -38,7 +40,7 @@ const TuitListItem = (
 
                 <div className="col-12">
             < img src={tuit.image} className="wd-profile-img" alt="None"/>
-            <div className="wd-author-name">{tuit.userName}
+            <div className="wd-author-name">{tuit.username}
 
                 <FontAwesomeIcon  icon={faCheckCircle} className="wd-icon-padding wd-verified-icon"/>
             </div>

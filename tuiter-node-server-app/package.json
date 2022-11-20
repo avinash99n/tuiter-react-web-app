@@ -1,0 +1,32 @@
+{
+  "name": "tuiter-node-server-app",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web Server for the tuiter application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinash99n/tuiter-node-server-app.git"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Avinash Nidadavolu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avinash99n/tuiter-node-server-app/issues"
+  },
+  "homepage": "https://github.com/avinash99n/tuiter-node-server-app#readme",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
