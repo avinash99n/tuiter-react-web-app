@@ -1,0 +1,30 @@
+.wd-page{
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-top:none;
+
+
+}
+
+.wd-full-page{
+    background-color: black;
+
+}
+
+.wd-padding-left-container{
+    padding-left: 16px;
+}
+
+
+hr {
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-more-icon{
+    float :right;
+    padding-right :16px;
+    color: rgb(110,118,125);
+}

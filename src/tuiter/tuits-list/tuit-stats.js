@@ -1,6 +1,6 @@
 import {useDispatch} from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComment,faHeart,faShareFromSquare} from '@fortawesome/free-regular-svg-icons'
+import { faComment,faHeart,faShareFromSquare,faThumbsDown} from '@fortawesome/free-regular-svg-icons'
 import {faHeart as likeHeart,faRetweet} from '@fortawesome/free-solid-svg-icons'
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
@@ -48,13 +48,24 @@ return (
 
 
                     <p className="wd-action-count">{tuit.likes}</p>
+                         </span>
 
-                {/*    <div className="wd-action-count">*/}
+            </form>
 
-                {/*        <i onClick={() => dispatch(updateTuitThunk({*/}
-                {/*            ...tuit,*/}
-                {/*            likes: tuit.likes + 1}))} className="bi bi-heart-fill me-2 text-danger">{tuit.likes}</i>*/}
-                {/*</div>*/}
+            <form action="#">
+
+                <span onClick={() => dispatch(updateTuitThunk({
+                    ...tuit,
+                    dislikes: tuit.dislikes + 1}))}>
+                    <button className="wd-action">
+                    {
+
+                        < FontAwesomeIcon icon={faThumbsDown}  aria-hidden="true"> </FontAwesomeIcon>
+                    }
+                    </button>
+
+
+                    <p className="wd-action-count">{tuit.dislikes}</p>
                          </span>
 
             </form>
